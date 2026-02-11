@@ -3,8 +3,9 @@
   --panel: #1e293b;
   --panel2: #111827;
   --border: #334155;
-  --text: #f1f5f9;
-  --muted: #94a3b8;
+
+  --text: #ffffff;
+  --muted: #cbd5e1;
 
   --green: #10b981;
   --green2: #34d399;
@@ -73,6 +74,7 @@ select {
   border: 1px solid var(--border);
   background: var(--panel2);
   color: var(--text);
+  font-weight: 600;
 }
 
 .row {
@@ -89,6 +91,7 @@ button {
   padding: 10px 14px;
   font-weight: bold;
   transition: 0.2s;
+  color: #ffffff; /* 👈 fuerza texto blanco en todos los botones */
 }
 
 .primary {
@@ -102,7 +105,7 @@ button {
 
 .ghost {
   background: var(--panel2);
-  color: var(--text);
+  color: #ffffff; /* 👈 ahora siempre blanco */
   border: 1px solid var(--border);
 }
 
@@ -120,6 +123,8 @@ button {
   padding: 12px;
   border-radius: 12px;
   border: 1px solid var(--border);
+  color: #ffffff;
+  font-weight: 500;
 }
 
 .duel {
@@ -138,6 +143,8 @@ button {
   border: 1px solid var(--border);
   text-align: left;
   padding: 16px;
+  color: #ffffff; /* 👈 fuerza blanco */
+  font-size: 16px;
 }
 
 .pick:hover {
@@ -154,8 +161,13 @@ button {
   line-height: 28px;
   margin-right: 10px;
   background: var(--gold);
-  color: #0f172a;
+  color: #000000; /* 👈 negro sobre dorado ahora sí se ve fuerte */
   font-weight: 900;
+}
+
+.title {
+  vertical-align: middle;
+  color: #ffffff;
 }
 
 .topbox {
@@ -163,6 +175,7 @@ button {
   border-radius: 12px;
   padding: 12px;
   min-height: 140px;
+  color: #ffffff;
 }
 
 .toprow {
@@ -170,6 +183,7 @@ button {
   justify-content: space-between;
   padding: 8px;
   border-bottom: 1px solid var(--border);
+  color: #ffffff;
 }
 
 .toprow:last-child { border-bottom: 0; }
